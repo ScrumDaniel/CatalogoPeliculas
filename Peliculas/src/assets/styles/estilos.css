@@ -1,0 +1,50 @@
+footer{
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+#searchInput{
+    width: 400px;
+}
+
+.card {
+    /* Estilos base de la tarjeta */
+    transition: transform 0.2s ease; /* Agrega una transición suave al cambio de posición */
+}
+
+.card:hover {
+    /* Estilos cuando el cursor está sobre la tarjeta */
+    transform: translateY(-20px); /* Desplaza 20px hacia arriba */
+}
+
+
+/* Media query para tablet */
+@media (max-width: 768px) {
+    #searchInput{
+        width: 300px; /* Tamaño para tablet */
+
+
+        /* Reducir la fuente del placeholder para tablet */
+        input::placeholder {
+            font-size: 0.2em;
+        }
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 576px) {
+    searchInput{
+        width: 200px; /* Tamaño para móviles */
+    }
+}
+
+input::placeholder {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
